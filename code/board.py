@@ -45,9 +45,6 @@ class Piece(pygame.sprite.Sprite):
         # self.image.fill((random.randint(1,255), random.randint(1,255), random.randint(1,255)))
         self.rect = self.image.get_rect(topleft = self.screen_pos)
 
-    def set_image(self):
-        print(hi)
-
     def move(self):
         self.rect = self.image.get_rect(center = pygame.mouse.get_pos())
 

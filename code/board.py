@@ -1,6 +1,6 @@
 import pygame
-from openings import opening_dictionary
-from gui import Button
+from code.openings import opening_dictionary
+from code.gui import Button
 
 class Square(pygame.sprite.Sprite):
     def __init__(self, rank, file):
@@ -61,7 +61,6 @@ class Piece(pygame.sprite.Sprite):
 
 class Board:
     def __init__(self, piece_assets, name1, name2, color, opening, move_count_max, screen, font):
-        super().__init__()
         self.screen = screen
         self.piece_assets = piece_assets
 

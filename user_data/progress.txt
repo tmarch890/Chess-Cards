@@ -1,0 +1,1 @@
+{'/Choose Opening/1. e4/Sicillian/Open Sicillian/white': [True, 4.534919500350952], '/Choose Opening/1. d4/London/white': [True, 4.6875], "/Choose Opening/1. d4/Queen's Gambit/Declined/white": [True, 4.546875], '/Choose Opening/1. d4/Trompowsky/white': [True, 2.5], '/Choose Opening/1. e4/Sicillian/Open Sicillian/black': [True, 9.375]}

@@ -34,8 +34,7 @@ class Color_button(pygame.sprite.Sprite):
         self.image.fill(self.color)
 
 class Menu:
-    def __init__(self, screen, sub_menus_dict, font, name, path):
-        super().__init__()
+    def __init__(self, screen, sub_menus_dict, font, name, path, alphabetical=True):
         self.screen = screen
         self.name = name
         self.sub_menus_dict = sub_menus_dict
@@ -45,7 +44,8 @@ class Menu:
         if isinstance(self.sub_menus_dict, dict):
             (pos_x,pos_y) = (406, 50)
             self.sub_menus_list = [menu for menu in self.sub_menus_dict.keys()]
-            self.sub_menus_list.sort()
+            if alphabetical:
+                self.sub_menus_list.sort()
             self.sub_menus = []
             for menu in self.sub_menus_list:
                 if isinstance(self.sub_menus_dict[menu], dict):
